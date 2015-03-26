@@ -1,0 +1,52 @@
+.button-holder {
+text-align:center;
+}
+.php-comment-output {
+width:99%;
+height:238px;
+overflow-y:scroll;
+}
+.comment-box {
+height:300px; 
+width:100%;
+border:1px solid grey;
+}
+
+#me-top-nav ul li a {
+background-color:black;
+font-family: 'Oswald', sans-serif;
+}
+#me-top-nav ul li ul {
+background-color:black;
+font-family: 'Oswald', sans-serif;
+}
+#me-top-nav ul li ul li {
+background-color:black;
+font-family: 'Oswald', sans-serif;
+}
+#me-top-nav {
+background-color:black;
+font-family: 'Oswald', sans-serif;
+}
+#me-top-nav ul li {
+color:white;
+font-family: 'Oswald', sans-serif;
+background-color:black;
+}
+#me-top-nav a {
+text-decoration:none;
+color:white;
+font-family: 'Oswald', sans-serif;
+}
+#me-top-nav span {
+color:white;
+}
+@media only screen and (max-width:739px)  {
+.wrapper {
+width:320px;
+}
+.test {
+height:200px;
+}
+
+}
