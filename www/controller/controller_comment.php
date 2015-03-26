@@ -1,4 +1,7 @@
+
+
 <?php 
+// Inserting comment to test GIT here!!
 	require_once '/model_test_comment.php';
 	//$getAll();
 	$result = Comment::getAll();

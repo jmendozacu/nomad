@@ -6,11 +6,22 @@ class Vote {
 	$db = 'nomad';
 	$conn = new PDO("mysql:host=localhost;dbname=$db", $user, $pass);
 	
-	$sql2 = "INSERT INTO `votes_by_location` (`$location`) VALUES ('$bool')";
+	$sql2 = "INSERT INTO `votes_by_location` (`$location`) VALUES ($bool)";
 	$query2 = $conn->prepare($sql2);
 	$query2->execute();
 	$result = $query2->fetchall(PDO::FETCH_ASSOC);
 	return $result;
 }
+	public static function getAll() {
+	$user = 'bcm811';
+	$pass = 'poke811';
+	$db = 'nomad';
+	$conn = new PDO("mysql:host=localhost;dbname=$db", $user, $pass);
+	$sql = "SELECT * FROM `votes_by_location`";
+	$query = $conn->prepare($sql);
+	$query->execute();
+	$result = $query->fetchall(PDO::FETCH_ASSOC);
+	return $result;
+	}
 }
 ?>
