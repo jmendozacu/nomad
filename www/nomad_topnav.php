@@ -8,12 +8,12 @@
         <span class="sr-only">Toggle navigation</span>
         <span class="glyphicon glyphicon-menu-hamburger"></span>
       </button>
-      <a class="navbar-brand" href="/nomad_index.php">noMad </a>
+      <a class="navbar-brand" href="/home">noMad </a>
 	  <img style='float:left; position:relative; top:+5px; width:35px; height:35px;' src='http://aplaceformyhead.org/nomad/twohumpswhite.png' alt='2 hump camel glyph'/>
     </div>
 	<div class="collapse navbar-collapse" id="me-navbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/nomad_places.php">Places<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="/places">Places<span class="sr-only">(current)</span></a></li>
         <li><a href="/nomad_jobs.php">Jobs</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Lifestyle<span class="caret"></span></a>

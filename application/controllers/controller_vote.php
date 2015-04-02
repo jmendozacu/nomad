@@ -1,11 +1,7 @@
 <?php 
-	require_once '../model/model_vote.php';
-	$location = $_POST['location'];
-	$value = $_POST['value'];
-	$bool = $value;
-	
-	//$result = Vote::insertVote($location,$bool);
-     
+class ControllerVote extends Controller {
+	function __construct() {
+	require_once '../application/models/model_vote.php';     
 	$votes = Vote::getAll();
 	var_dump($votes);
 	$length = count($votes);
@@ -21,6 +17,7 @@
 			array_push($thumbsUpVotes['Hampton_Beach_NH'],$votes[$i]['Hampton_Beach_NH']);
 		}
 	}
-	
-	var_dump($thumbsUpVotes);
+}
+}
+
 ?>
