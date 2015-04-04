@@ -28,7 +28,10 @@
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Portsmouth_NH'></span>  <span class='glyphicon glyphicon-thumbs-down' location-data='Portsmouth_NH'></span></p>
 	</div>
-	<div class='text-center'><?php echo "Thumbs up: {$thumbsUpVotes['Portsmouth_NH']}" ?></div>
+	<div class='text-center'><?php
+	echo "Thumbs up: {$data[0]['Portsmouth_NH']}" ;
+	echo "  Thumbs down: {$data[1]['Portsmouth_NH']}";
+	?></div>
 </div>
 <br/>
 <div class='row'>

@@ -1,8 +1,9 @@
 <?php 
 	class Controller {
 
-		protected function view($name) {
-			eval ('?>' . file_get_contents ("$name"));
+		protected function view($name,$data) {
+			$info = $data;
+			include "$name";
 
 		}
 	}

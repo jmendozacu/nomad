@@ -1,7 +1,8 @@
 <?php 
 class HomeController extends Controller {
 	function __construct() {
-$this->view('home.php');
+		$data = '';
+$this->view('home.php', $data);
 	}
 }
 

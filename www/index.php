@@ -65,7 +65,7 @@
 		$controller = isset($this->route->controller)? $this->route->controller : false;
 		$method = isset($this->route->method) ? $this->route->method : false;
 		$args = isset($this->route->arguments) ? $this->route->arguments :false;
-		if ($this->route->controller === false) { require_once '../application/views/index.php';}
+		if ($controller === false) { require_once '../www/nomad_index.php';}
 		if ($method !== false) {
 			if ($args !== false) {
 				$controller->$method($args);

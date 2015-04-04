@@ -1,23 +1,33 @@
 <?php 
 class VoteController extends Controller {
-	public static function getVotes() {
+	public static function getLocationInfo() {
+	require_once '../application/models/model_vote.php';
+	$var = Vote::getLocations();
+	return $var;
+
+	}
+
+
+
+
+
+
+	/*public static function getVotes() {
 		require_once '../application/models/model_vote.php';
-	$votes = Vote::getAll();
-	$length = count($votes);
-	$thumbsUpVotes['Portsmouth_NH'] = array();
-	$thumbsUpVotes['Hampton_Beach_NH'] = array();
-	for ($i = 0; $i <$length; $i++) {
-		if ($votes[$i]['Portsmouth_NH'] === '1') {
-			array_push($thumbsUpVotes['Portsmouth_NH'],$votes[$i]['Portsmouth_NH']);
+$votes = Vote::getAll();
+	$thumbsUp = array('Portsmouth_NH'=>0,'Hampton_Beach_NH'=>0);
+	$locations = array('Portsmouth_NH', 'Hampton_Beach_NH');	
+	foreach ($votes as $array){
+		foreach ($locations as $location) {
+			if ($array["$location"] === $location){
+			$thumbsUp["$location"] = $thumbsUp[$location]+1;
+			}
 		}
 	}
-			for ($i = 0; $i <$length; $i++) {
-		if ($votes[$i]['Hampton_Beach_NH'] === '1') {
-			array_push($thumbsUpVotes['Hampton_Beach_NH'],$votes[$i]['Hampton_Beach_NH']);
-		}
+	return $thumbsUp;
 	}
+
+*/
 }
-	}
-
-
+VoteController::getLocationInfo();
 ?>
