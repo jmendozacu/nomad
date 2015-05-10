@@ -24,7 +24,7 @@
 <br/><br/>
 <div class='row'>
 	<div class='col-md-12'>
-		<p class='text-center'>The rest is coming soon!!! Keep submitting information, and get your seasonal friends to submit info and we'll have an interactive guidebook for seasonal employees!!!</p>
+		<img src='/img/nomadbanner.jpg'/>
 	</div>
 	
 </div>

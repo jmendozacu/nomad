@@ -24,7 +24,6 @@ $all = array($thumbsUp, $thumbsDown);
 			}
 			
 		}
-		$portsmouth = 'Portsmouth_NH';
 		$thumbsUp = array_count_values($thumbsUp);
 		$thumbsDown = array_count_values($thumbsDown);
 		return array ($thumbsUp, $thumbsDown);
@@ -32,6 +31,24 @@ $all = array($thumbsUp, $thumbsDown);
 	}
 	else {echo 'something happened';}
 }
+	public static function applyVote($location, $value) {
+		$user = 'bcm811';
+		$pass = 'poke811';
+		$db = 'nomad';
+		$conn = new PDO("mysql:host=localhost;dbname=$db", $user, $pass);
+		$sql = "INSERT INTO `votes_by_location` (`location`,`value`) VALUES (?, ?)";
+		$query = $conn->prepare($sql);
+		$query->bindParam(1, $location);
+		$query->bindParam(2, $value, PDO::PARAM_INT);
+		if ($query->execute()) {
+		echo 'Success!';
+		} else {
+		echo 'Failure.';
+		}
+
+	
+	}
 
 }
+
 ?>

@@ -54,6 +54,7 @@
 			  return false;
 		}
 	private function load_method($name) {
+		var_dump($name);
 		return method_exists($this->route->controller, strtolower($name)) ? $name : false;
 	}
 

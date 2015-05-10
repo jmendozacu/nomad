@@ -1,0 +1,147 @@
+#help_center {
+background:url(/media/user/general/icons/help.png) no-repeat .8em center;
+}
+#help_drop {
+background:#6D6E71;
+display:none;
+clear:both;
+min-width:0;
+width:300px;
+padding:0;
+font-weight:400;
+color:#FFF;
+position:absolute;
+top:100%;
+right:0;
+z-index: 1000;
+}
+/* Search */
+#help_drop form,#help_results {
+padding:0 1em 1em;
+}
+#help_search {
+width:64%;
+margin:0 -.25em 0 0;
+padding:.3em 0 .3em .3em;
+outline:0;
+}
+#help_drop .btn_primary {
+width:30%;
+position:static;
+margin-left: 1em;
+}
+#help_results {
+background:#E1E1E1;
+display:none;
+border-top:1px solid #FFF;
+}
+#help_results #help_reset {
+display:inline-block;
+margin:.5em 0 0;
+}
+/* Help Topics */
+#help_container,#help_videos,#help_topics,#help_upgrades {
+display:none;
+}
+#help_drop h2,#help_more p,#help_drop .title {
+margin:.5em 0;
+}
+#help_container {
+background:#E1E1E1;
+padding:1em;
+}
+#help_container.active {
+border-top:1px solid #FFF;
+}
+#help_container .subheading {
+display:inline;
+margin:0;
+padding:0 .4em 0 0;
+}
+#help_drop .title,#help_drop .loading {
+color:#6D6E71;
+}
+#help_videos,#help_upgrades {
+margin:1em 0 0;
+}
+#help_drop .a {
+display:block;
+margin:.5em 0;
+}
+#help_topics {
+margin-top:1em;
+}
+#help_drop .lightbox {
+margin:1em 0 2em;
+cursor:pointer;
+position:relative;
+}
+#help_drop .lightbox:after {
+content:url(/media/shared/general/youtube_play.png);
+width:71px;
+height:51px;
+margin:-25.5px 0 0 -35.5px;
+position:absolute;
+top:50%;
+left:50%;
+z-index:2;
+}
+#help_drop .lightbox img {
+width:100%;
+height:9.4em;
+z-index:1;
+}
+#help_drop .video_title {
+display:block;
+zoom:1;
+width:100%;
+height:12em;
+margin:0;
+text-align:center;
+text-decoration:none;
+font-size:.9em;
+line-height:22.5em;
+position:absolute;
+top:0;
+left:0;
+z-index:1;
+}
+#help_drop .video_title.hidden {
+display:none;
+}
+.help_topic,.help_upgrade {
+display:block;
+}
+.help_topic {
+background:url(/media/user/general/icons/article.png) no-repeat .8em .6em;
+padding:.7em 0 .6em 2.6em;
+}
+.help_topic.hidden {
+display:none;
+}
+.help_upgrade {
+background:url(/media/user/general/icons/upgrade.png) no-repeat .7em .45em;
+padding:.3em 0 .3em 2.6em;
+}
+/* Help More */
+#help_more {
+padding:1em;
+border-top:1px solid #FFF;
+}
+#help_more .small {
+margin:0 0 1em;
+}
+#help_more p {
+margin:0;
+}
+#help_more p small {
+float:left;
+width:40%;
+}
+#help_additional {
+margin: 1em 0 0;
+text-align: center;
+}
+#help_additional a {
+margin:.5em 1em 0;
+}
