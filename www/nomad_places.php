@@ -5,7 +5,9 @@
 <div class='container-fluid'>
 <br></br>
 <br></br>
-<ul>
+<div class='row'>
+<div class='col-md-12'>
+<ul style='float:left;'>
 	<li><a href='#massachussetts'>Massachussetts</a></li>
 	<li><a href='#newhampshire'>New Hampshire</a></li>
 	<li><a href='#maine'>Maine</a></li>
@@ -13,9 +15,31 @@
 	<li><a href='#rhodeisland'>Rhode Island</a></li>
 	
 </ul>
-<br/><br/>
+<ul style='float:left;'>
+	<li><a href='#connecticut'>Connecticut</a></li>
+</ul>
+</div>
+</div>
+<div style='float:clear;'></div>
+<div class='row'>
+	<div class='col-md-3'></div>
+	<div class='col-md-6'>
+		<div class='container'><img style='margin:0 auto;' src='/img/colormapfinal.jpg'/></div>
+	</div>
+	<div class='col-md-3'>
+</div>
+<div class='row'>
+	<div class='col-md-12'><p class='text-center'>So far I have covered 6 US States. They are far from complete, there are quite a few locations all over this wonderful country
+	that although I'd like to, I'll never get to visit. I'll do my best to cover the location, but having input from fellow seasonal nomads is what will really help others. I'll soon be adding
+	functionality to be able to submit a location yourself!
+	</p></div>
+</div>
 <!-- VERMONT -->
+<div class='row'>
+<div class='col-md-12'>
+
 <h1 class='text-center'><a name='vermont'>Vermont</a></h1>
+</div> </div>
 <!-- Stratton, VT -->
 <div class = 'row'>
 	<div class='col-md-12'>
@@ -25,7 +49,7 @@
 <div class='row'>
 	<div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/stratton.jpg' alt='Stratton Mountain, VT'/>
+		<img data-featherlight='/img/stratton.jpg' class='img-responsive center-block' src='/img/stratton.jpg' alt='Stratton Mountain, VT'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -34,15 +58,17 @@
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Stratton_VT'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Stratton_VT'></span></p>
 	</div>
-		<div class='text-center'><?php 
+	<div class='col-md-6'>
+		<div class='text-center vote-border'><?php 
 	echo "Thumbs up: {$data[0][0]['Stratton_VT']}" ;
 	echo "  Thumbs down: {$data[0][1]['Stratton_VT']}";
 	?>
 	</div>
+	</div>
 </div>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>Stratton Mountain is the largest ski mountain in southern VT. The closest urbanized area to it would be Brattleboro, VT a roughly 45 minute drive. It is 3 hours from Boston,
+		<p class='text-left description'>Stratton Mountain is the largest ski mountain in southern VT. The closest urbanized area to it would be Brattleboro, VT a roughly 45 minute drive. It is 3 hours from Boston,
 		and 4 hours from New York City. With 2000 ft of vertical none of the other resorts south of Killington can compete with Stratton for length of runs and world class snow making. I've personally ridden on quite a few
 		east coast mountains, early season or bad season (no snow) and have come to the conclusion Stratton takes the cake for grooming and snowmaking. Even on the scariest of days a beginner can easily get down from
 		the top of the gondola. They also just put in new gondola cars that look quite fancy although I have yet to ride in them. Now that I've dealt with the snow quality, I feel a big difference that Stratton offers to it's guests is
@@ -87,7 +113,7 @@
 <div class='row'>
 	<div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/burlington.jpg' alt='Burlington, VT'/>
+		<img class='img-responsive center-block' data-featherlight='/img/burlington.jpg' src='/img/burlington.jpg' alt='Burlington, VT'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -96,15 +122,17 @@
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Burlington_VT'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Burlington_VT'></span></p>
 	</div>
-		<div class='text-center'><?php 
+	<div class='col-md-6'>
+		<div class='text-center vote-border'><?php 
 	echo "Thumbs up: {$data[0][0]['Burlington_VT']}" ;
 	echo "  Thumbs down: {$data[0][1]['Burlington_VT']}";
 	?>
 	</div>
+	</div>
 </div>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>Burlington is the largest city in Vermont. It lies on the shores of Lake Champlain an enormous body of water. Burlington is best known for it's Church St
+		<p class='text-left description'>Burlington is the largest city in Vermont. It lies on the shores of Lake Champlain an enormous body of water. Burlington is best known for it's Church St
 		which is a pedestrian only street that runs multiple city blocks and showcases artisans of every craft, street performers, restaurants, bars and breweries. Burlington has long been
 		known for being very progressive as a city, and now runs entirely on renewable energy! Being 40 minutes away from Mt. Stowe ski area and right on the shores of the lake, makes this
 		a very desirable destination for tourists year round.
@@ -151,7 +179,7 @@
 <div class='row'>
 	<div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/blockisland.jpg' alt='Cliffs on Block Island'/>
+		<img class='img-responsive center-block' data-featherlight='/img/blockisland.jpg' src='/img/blockisland.jpg' alt='Cliffs on Block Island'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -160,15 +188,17 @@
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Block_Island_RI'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Block_Island_RI'></span></p>
 	</div>
-		<div class='text-center'><?php 
+	<div class='col-md-6'>
+		<div class='text-center vote-border'><?php 
 	echo "Thumbs up: {$data[0][0]['Block_Island_RI']}" ;
 	echo "  Thumbs down: {$data[0][1]['Block_Island_RI']}";
 	?>
 	</div>
+	</div>
 </div>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>Block Island, RI is located 13 miles off the coast of Narragansett, RI. In the 2010 census it was determined 1,051 people live on a little over 
+		<p class='text-left description'>Block Island, RI is located 13 miles off the coast of Narragansett, RI. In the 2010 census it was determined 1,051 people live on a little over 
 		9 square miles of land. This location was my first seasonal place, and it helped immensely to set me on the path which I took from there. There are many historic buildings on the island
 		some over 200 years old. It's season operates from Memorial Day until Columbus Day (with it slowing down noticably after labor day). There are numerous hotels, restaurants, and bars to work at
 		on the island, as well as boat marinas, moped rental shops, lifeguard and beach positions, as well as landscaping. Housing can be rather difficult to find if you do not get it from your employer,
@@ -205,6 +235,252 @@
 	</div>
 	</div>
 
+<!-- Narragansett, RI -->
+<div class = 'row'>
+	<div class='col-md-12'>
+		<p class='text-center h1'>Narragansett, RI</p>
+	</div>
+</div>
+<div class='row'>
+	<div class='col-md-3'></div>
+	<div class='col-md-6'>
+		<img class='img-responsive center-block' data-featherlight='/img/narragansett.jpg' src='/img/narragansett.jpg' alt='Narragansett Beach and Seawall'/>
+	</div>
+	<div class='col-md-3'></div>
+</div>
+<br/><br/>
+<div class='row'>
+	<div class='col-md-6'>
+		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Narragansett_RI'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Narragansett_RI'></span></p>
+	</div>
+		<div class='col-md-6'>
+		<div class='text-center vote-border'><?php 
+	echo "Thumbs up: {$data[0][0]['Narragansett_RI']}" ;
+	echo "  Thumbs down: {$data[0][1]['Narragansett_RI']}";
+	?>
+	</div>
+	</div>
+</div>
+<div class='row'>
+	<div class='col-md-6'>
+		<p class='description'> The town of Narragansett, RI is located on a small strip of land in between a river and the Narragansett Bay. It's year round community is roughly 15,000
+		with it more than doubling to around 34,000 in the summer. It is home to many smaller communities with names like "Bonnet Shores" and "Eastward Look". There are multiple beaches
+		running along the coastline, with some even requiring an entry fee to people on foot. Ferries to multiple other locations close by can be taken out of the seaport of Galilee. The beer
+		Naragansett Lager, was named after this town. There are many restaurants and shops along the stretch of this community and it makes for a lively tourist scene.
+		</p>
+		<ul>
+			<li><a href='http://www.narragansettri.gov/'> NarragansettRI.gov</a> Government website for the town of Narragansett</li>
+			<li><a href='http://www.durkincottages.com/'> Durkin Realty</a> A local realtor in Narragansett that specializes in sea cottage rentals</li>
+		</ul>
+	</div>
+	<div class='col-md-6'>
+		<div class='comment-box'>	
+			<div class='php-comment-output'>
+						<?php 
+				foreach ($data[1] as $array) {
+					if ($array['location'] === 'Narragansett_RI') {
+						echo "<div class='row'>
+						<div class='col-sm-3'>
+										<strong>User Review :</strong> 
+								 </div>
+								 <div class='col-sm-9'>
+										{$array['comment']}
+								</div></div><br/>";
+					}
+				}
+			?>
+			</div>
+				<input type="text" class="form-control" placeholder="Text input" data-location='Narragansett_RI'></input>
+				<div class='button-holder'>
+				<button type='submit'>Submit</button>
+			</div>
+			</div>
+	</div>
+	</div> 
+<!-- Newport, RI -->
+<div class = 'row'>
+	<div class='col-md-12'>
+		<p class='text-center h1'>Newport, RI</p>
+	</div>
+</div>
+<div class='row'>
+	<div class='col-md-3'></div>
+	<div class='col-md-6'>
+		<img class='img-responsive center-block' data-featherlight='/img/newport.jpg' src='/img/newport.jpg' alt='Mansions on Newports Cliffs'/>
+	</div>
+	<div class='col-md-3'></div>
+</div>
+<br/><br/>
+<div class='row'>
+	<div class='col-md-6'>
+		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Newport_RI'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Newport_RI'></span></p>
+	</div>
+		<div class='col-md-6'>
+		<div class='text-center vote-border'><?php 
+	echo "Thumbs up: {$data[0][0]['Newport_RI']}" ;
+	echo "  Thumbs down: {$data[0][1]['Newport_RI']}";
+	?>
+	</div>
+	</div>
+</div>
+<div class='row'>
+	<div class='col-md-6'>
+		<p class='description'> Newport, RI is a seaside city on Aquidneck Island. A major 18th-century port city, 
+		Newport now contains among the highest number of surviving colonial buildings of any city in the United States. With a bustling downtown section with taverns, shops, and all
+		kinds of restaurants there is no shortage of activity. There are many beautiful beaches, Newport Second Beach being my personal favorite. There are many historic cliff-side mansions
+		like the one pictures that litter the picturesque shoreline of Newport. Not a far drive from downtown there is also a gaming casino, The Newport Grand.
+		</p>
+		<ul>
+			<li><a href='http://www.cityofnewport.com/'>City of Newport</a> Newport's local government website</li>
+			<li><a href='http://www.newportri.com/newportdailynews/'> Newport Local Newspaper</a> A good place to start if trying to live in Newport</li>
+		</ul>
+	</div>
+	<div class='col-md-6'>
+		<div class='comment-box'>	
+			<div class='php-comment-output'>
+						<?php 
+				foreach ($data[1] as $array) {
+					if ($array['location'] === 'Newport_RI') {
+						echo "<div class='row'>
+						<div class='col-sm-3'>
+										<strong>User Review :</strong> 
+								 </div>
+								 <div class='col-sm-9'>
+										{$array['comment']}
+								</div></div><br/>";
+					}
+				}
+			?>
+			</div>
+				<input type="text" class="form-control" placeholder="Text input" data-location='Newport_RI'></input>
+				<div class='button-holder'>
+				<button type='submit'>Submit</button>
+			</div>
+			</div>
+	</div>
+	</div>
+<!-- CONNECTICUT -->
+<h1 class='text-center'><a name='connecticut'>Connecticut</a></h1>
+<!-- Niantic, CT -->
+<div class = 'row'>
+	<div class='col-md-12'>
+		<p class='text-center h1'>Niantic, CT</p>
+	</div>
+</div>
+<div class='row'>
+	<div class='col-md-3'></div>
+	<div class='col-md-6'>
+		<img class='img-responsive center-block' data-featherlight='/img/niantic.jpg' src='/img/niantic.jpg' alt='/img/niantic.jpg'/>
+	</div>
+	<div class='col-md-3'></div>
+</div>
+<br/><br/>
+<div class='row'>
+	<div class='col-md-6'>
+		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Niantic_CT'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Niantic_CT'></span></p>
+	</div>
+		<div class='col-md-6'>
+		<div class='text-center vote-border'><?php 
+	echo "Thumbs up: {$data[0][0]['Niantic_CT']}" ;
+	echo "  Thumbs down: {$data[0][1]['Niantic_CT']}";
+	?>
+	</div>
+	</div>
+</div>
+<div class='row'>
+	<div class='col-md-6'>
+		<p class='description'>Niantic, CT is a village located inside of East Lyme, CT. Niantic Bay is a very popular summer destination for boating, swimming, and fishing. Rocky Neck State Park
+		offers a mile of beach with views of long island sound, and some of the only sandy beach area in Connecticut. The Niantic Yacht Club organizes races a couple of adays a week in the summertime.
+		</p>
+		<ul>
+			<li><a href='http://theblacksheepniantic.com/'>The Black Sheep Tavern</a> A local favorite</li>
+			<li><a href='http://www.discovereastlyme.com/'>East Lyme Tourism</a> Things to do while in East Lyme</li>
+		</ul>
+	</div>
+	<div class='col-md-6'>
+		<div class='comment-box'>	
+			<div class='php-comment-output'>
+						<?php 
+				foreach ($data[1] as $array) {
+					if ($array['location'] === 'Niantic_CT') {
+						echo "<div class='row'>
+						<div class='col-sm-3'>
+										<strong>User Review :</strong> 
+								 </div>
+								 <div class='col-sm-9'>
+										{$array['comment']}
+								</div></div><br/>";
+					}
+				}
+			?>
+			</div>
+				<input type="text" class="form-control" placeholder="Text input" data-location='Niantic_CT'></input>
+				<div class='button-holder'>
+				<button type='submit'>Submit</button>
+			</div>
+			</div>
+	</div>
+	</div>
+<!-- Mystic, CT -->
+<div class = 'row'>
+	<div class='col-md-12'>
+		<p class='text-center h1'>Mystic, CT</p>
+	</div>
+</div>
+<div class='row'>
+	<div class='col-md-3'></div>
+	<div class='col-md-6'>
+		<img class='img-responsive center-block' data-featherlight='/img/mystic.jpg' src='/img/mystic.jpg' alt='Aerial view of Mystic, CT'/>
+	</div>
+	<div class='col-md-3'></div>
+</div>
+<br/><br/>
+<div class='row'>
+	<div class='col-md-6'>
+		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Mystic_CT'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Mystic_CT'></span></p>
+	</div>
+		<div class='col-md-6'>
+		<div class='text-center vote-border'><?php 
+	echo "Thumbs up: {$data[0][0]['Mystic_CT']}" ;
+	echo "  Thumbs down: {$data[0][1]['Mystic_CT']}";
+	?>
+	</div>
+	</div>
+</div>
+<div class='row'>
+	<div class='col-md-6'>
+		<p class='description'> Mystic, CT is best known for the Mystic Aquarium and Institute for Exploration as well as Mystic Seaport, which is the largest
+		maritime museum of it's kind. Being right on the Mystic River with bridges connecting to the different parts of the town, it definitely gives you the feel of an 18th century fishing community.
+		</p>
+		<ul>
+			<li><a href='www.mystic.org'>mystic.org</a> Gives a broad overview about everything Mystic and the surrounding areas have to offer.</li>
+			<li><a href='http://www.mysticaquarium.org/'>Mystic Aquarium</a> The aquarium's website showing what they have available</li>
+		</ul>
+	</div>
+	<div class='col-md-6'>
+		<div class='comment-box'>	
+			<div class='php-comment-output'>
+						<?php 
+				foreach ($data[1] as $array) {
+					if ($array['location'] === 'Mystic_CT') {
+						echo "<div class='row'>
+						<div class='col-sm-3'>
+										<strong>User Review :</strong> 
+								 </div>
+								 <div class='col-sm-9'>
+										{$array['comment']}
+								</div></div><br/>";
+					}
+				}
+			?>
+			</div>
+				<input type="text" class="form-control" placeholder="Text input" data-location='Mystic_CT'></input>
+				<div class='button-holder'>
+				<button type='submit'>Submit</button>
+			</div>
+			</div>
+	</div>
+	</div>
 <!-- MASSACHUSSETTS-->
 <h1 class='text-center'><a name='massachussetts'>Massachussetts</a></h1>
 <!-- Cape Cod, MA -->
@@ -217,7 +493,7 @@
 	<div class='col-md-3'>
 	</div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/capecod.jpg' alt='Aerial view of Cape Cod and the Islands'/>
+		<img class='img-responsive center-block' data-featherlight='/img/capecod.jpg' src='/img/capecod.jpg' alt='Aerial view of Cape Cod and the Islands'/>
 	</div>
 	<div class='col-md-3'></div>
 	</div>
@@ -227,15 +503,17 @@
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Cape_Cod_MA'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Cape_Cod_MA'></span></p>
 	</div>
-		<div class='text-center'><?php 
+	<div class='col-md-6'>
+		<div class='text-center vote-border'><?php 
 	echo "Thumbs up: {$data[0][0]['Cape_Cod_MA']}" ;
 	echo "  Thumbs down: {$data[0][1]['Cape_Cod_MA']}";
 	?>
 	</div>
+	</div>
 </div>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>I used this picture to show the scale of how large the area known as "Cape Cod" is. You can also see the islands of <a href='#Marthas_Vineyard_MA'>
+		<p class='text-left description'>I used this picture to show the scale of how large the area known as "Cape Cod" is. You can also see the islands of <a href='#Marthas_Vineyard_MA'>
 		Martha's Vineyard</a>, <a href='#Nantucket_MA'>Nantucket</a>, and Block Island (part of Rhode Island). Cape Cod is home to quite a few towns and villages, all of them see their economies boom in the few shorts
 		months that comprise the summer season. Generally the rule is once the kids are out of school (mid-June) until they go back (1st week of September) is the whole season. All communities on the cape have some form of
 		year round population and economy but the further out the arm you go the less likely you are to find too many jobs in the winter time unless you like to fish. The whole of the Cape has 559.6 miles of unspoiled coastline. If
@@ -280,7 +558,7 @@
 <div class='row'>
 	<div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/marthasvineyard.jpg' alt='Picture of Marthas Vineyard gingerbread houses'/>
+		<img class='img-responsive center-block' data-featherlight='/img/marthasvineyard.jpg' src='/img/marthasvineyard.jpg' alt='Picture of Marthas Vineyard gingerbread houses'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -289,15 +567,17 @@
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Marthas_Vineyard_MA'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Marthas_Vineyard_MA'></span></p>
 	</div>
-		<div class='text-center'><?php 
+	<div class='col-md-6'>
+		<div class='text-center vote-border'><?php 
 	echo "Thumbs up: {$data[0][0]['Marthas_Vineyard_MA']}" ;
 	echo "  Thumbs down: {$data[0][1]['Marthas_Vineyard_MA']}";
 	?>
 	</div>
+	</div>
 </div>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>Located just a 30 minute ferry ride out of the fishing and research community of Wood's Hole, in Falmouth, MA,  Martha's Vineyard sits south of Cape Cod. Also referred to as just "the vineyard" the island
+		<p class='text-left description'>Located just a 30 minute ferry ride out of the fishing and research community of Wood's Hole, in Falmouth, MA,  Martha's Vineyard sits south of Cape Cod. Also referred to as just "the vineyard" the island
 sees much traffic from daytrippers and overnight vacationers. Year round population is 14k. In the summertime it can swell to over 100k. There a four different towns on Martha's Vineyard: Vineyard Haven (Tisbury), West Tisbury, 
 Edgartown,and Oak Bluffs. There are many employers who will hire you from afar here and provide employee housing. It is possible to get your own housing on islands but it will be at least 30% more expensive and you'll probably
 have to cough up a large chunk up front to prove you mean business. The island has many summer homes that are owned by the rich and famous, movie stars included.
@@ -339,7 +619,7 @@ have to cough up a large chunk up front to prove you mean business. The island h
 <div class='row'>
 	<div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/provincetown.jpg' alt='Provincetown Shoreline View'/>
+		<img class='img-responsive center-block' data-featherlight='/img/provincetown.jpg' src='/img/provincetown.jpg' alt='Provincetown Shoreline View'/>
 	</div>
 	<div class='col-md-3'>
 	</div>
@@ -349,15 +629,17 @@ have to cough up a large chunk up front to prove you mean business. The island h
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Provincetown_MA'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Provincetown_MA'></span></p>
 	</div>
-		<div class='text-center'><?php 
+	<div class='col-md-6'>
+		<div class='text-center vote-border'><?php 
 	echo "Thumbs up: {$data[0][0]['Provincetown_MA']}" ;
 	echo "  Thumbs down: {$data[0][1]['Provincetown_MA']}";
 	?>
 	</div>
+	</div>
 </div>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>Provincetown, MA is located on the very end of the peninsula or the "arm" of Cape Cod. It takes a solid 90 minutes of driving from when you first drive over one of the bridges
+		<p class='description'>Provincetown, MA is located on the very end of the peninsula or the "arm" of Cape Cod. It takes a solid 90 minutes of driving from when you first drive over one of the bridges
 		onto the Cape Cod land mass, to get to Provincetown. It is very remote for being connected by road to the rest of the state. Known as one of the largest LBGT communites in the country, and also a very active fishing port,
 		Provincetown is host to a variety of people from all walks of life. The town is extremely built up for a beach community and there is something going on every night of the week. Day time tourism is just as high with families coming out
 		in large numbers to enjoy the shops that the main strip has to offer. There are natural wonders along the beaches and shoreline that are rare even for a place as beautiful as Cape Cod. You can definitely have a great summer working-with-us-en
@@ -402,7 +684,7 @@ have to cough up a large chunk up front to prove you mean business. The island h
 <div class='row'>
 	<div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/nantucket.jpg' alt='Nantucket seaside'/>
+		<img class='img-responsive center-block' data-featherlight='/img/nantucket.jpg' src='/img/nantucket.jpg' alt='Nantucket seaside'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -411,15 +693,17 @@ have to cough up a large chunk up front to prove you mean business. The island h
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Nantucket_MA'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Nantucket_MA'></span></p>
 	</div>
-		<div class='text-center'><?php 
+	<div class='col-md-6'>
+		<div class='text-center vote-border'><?php 
 	echo "Thumbs up: {$data[0][0]['Nantucket_MA']}" ;
 	echo "  Thumbs down: {$data[0][1]['Nantucket_MA']}";
 	?>
 	</div>
+	</div>
 </div>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>Nantucket is an island 30 miles south of Cape Cod, it is what could be described as a modern functioning late 18th - early 19th century seaport town. Also known as the grey lady, Nantucket has an
+		<p class='description'>Nantucket is an island 30 miles south of Cape Cod, it is what could be described as a modern functioning late 18th - early 19th century seaport town. Also known as the grey lady, Nantucket has an
 		astonishing amount of foggy days per year. During the summer season Nantucket is playground of the ultra wealthy and elite. If Martha's Vineyard is home to the movie stars mansions, Nantucket is where the directors come
 		to play. If you take the slow ferry it is 2.5 hours long. There are some amazing land formations and breath taking views. Island life can be hard, and the remoteness of Nantucket isn't for everyone.If you like the idea of being isolated
 		from the rest of the world then maybe Nantucket might be for you.
@@ -462,7 +746,7 @@ have to cough up a large chunk up front to prove you mean business. The island h
 <div class='row'>
 	<div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/wachussett.jpeg' alt='Wachussett Mountain'/>
+		<img class='img-responsive center-block' data-featherlight='/img/wachussett.jpeg' src='/img/wachussett.jpeg' alt='Wachussett Mountain'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -471,10 +755,12 @@ have to cough up a large chunk up front to prove you mean business. The island h
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Wachussett_MA'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Wachussett_MA'></span></p>
 	</div>
-		<div class='text-center'><?php 
+	<div class='col-md-6'>
+		<div class='text-center vote-border'><?php 
 	echo "Thumbs up: {$data[0][0]['Wachussett_MA']}" ;
 	echo "  Thumbs down: {$data[0][1]['Wachussett_MA']}";
 	?>
+	</div>
 	</div>
 </div>
 <div class='row'>
@@ -522,7 +808,7 @@ have to cough up a large chunk up front to prove you mean business. The island h
 <div class='row'>
 <div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/portsmouth.jpg' alt='Portsmouth NH Harbor'/>
+		<img class='img-responsive center-block' data-featherlight='/img/portsmouth.jpg' src='/img/portsmouth.jpg' alt='Portsmouth NH Harbor'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -532,15 +818,17 @@ have to cough up a large chunk up front to prove you mean business. The island h
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Portsmouth_NH'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Portsmouth_NH'></span></p>
 	</div>
-	<div class='text-center'><?php
+	<div class='col-md-6'>
+	<div class='text-center vote-border'><?php
 	echo "Thumbs up: {$data[0][0]['Portsmouth_NH']}" ;
 	echo "  Thumbs down: {$data[0][1]['Portsmouth_NH']}";
 	?></div>
+	</div>
 </div>
 <br/>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>
+		<p class='description'>
 		With a population of 21,000 Portsmouth, NH has a larger year round population than many other tourist destinations but still keeps its small town charm. It is a historic seaport with quite a lot of history. With 86 bars
 		and restaurants in town someone would have no problem at all finding a summer time job here to make money. With multiple beaches available within 20 minutes from the city, one can live and work in a city but still
 		visit gorgeous beaches in a short drive.
@@ -584,7 +872,7 @@ have to cough up a large chunk up front to prove you mean business. The island h
 <div class='row'>
 <div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/hampton.jpg' alt='Hampton Beach traffic'/>
+		<img class='img-responsive center-block' data-featherlight='/img/hampton.jpg' src='/img/hampton.jpg' alt='Hampton Beach traffic'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -593,15 +881,17 @@ have to cough up a large chunk up front to prove you mean business. The island h
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Hampton_Beach_NH'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Hampton_Beach_NH'></span></p>
 	</div>
-	<div class='text-center'><?php
+	<div class='col-md-6'>
+	<div class='text-center vote-border'><?php
 	echo "Thumbs up: {$data[0][0]['Hampton_Beach_NH']}" ;
 	echo "  Thumbs down: {$data[0][1]['Hampton_Beach_NH']}";
 	?></div>
+	</div>
 </div>
 <br/>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>
+		<p class='description'>
 		Hampton Beach is a village-district within the town of Hampton, New Hampshire. It is the most visited tourist destination in the state. It is home to many gorgeous beaches within close proximity to town. Ocean Gaming Casino
 		draws big spenders into the area. Big name shows are also available for viewing at the Hampton Beach Casino Ballroom. 
 		</p>
@@ -643,7 +933,7 @@ have to cough up a large chunk up front to prove you mean business. The island h
 <div class='row'>
 <div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/northconway.jpg' alt='North Conway Main St'/>
+		<img class='img-responsive center-block' data-featherlight='/img/northconway.jpg' src='/img/northconway.jpg' alt='North Conway Main St'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -652,14 +942,16 @@ have to cough up a large chunk up front to prove you mean business. The island h
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='North_Conway_NH'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='North_Conway_NH'></span></p>
 	</div>
-		<div class='text-center'><?php
+	<div class='col-md-6'>
+		<div class='text-center vote-border'><?php
 	echo "Thumbs up: {$data[0][0]['North_Conway_NH']}" ;
 	echo "  Thumbs down: {$data[0][1]['North_Conway_NH']}";
 	?></div>
+	</div>
 </div>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>
+		<p class='description'>
 		North Conway is a year round resort destination. Located in between the White Mountain National Forest and the border of Maine, it is the largest village within the town of Conway. With so much to do within just a few
 		minutes drive its no wonder people come here with the family for vacations. There's Mt Washington 22 minutes away (highest peak in the Northeastern United States at 6,288 ft) , Mt. Cranmore Ski Area is literally under
 		a five minute drive from town and offers 100% snowmaking on its trails. There's also climbing at Cathedral Ledge and an antique train that runs a route through town.
@@ -705,7 +997,7 @@ have to cough up a large chunk up front to prove you mean business. The island h
 <div class='row'>
 <div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/loon.jpg' alt='Gondola at Loon'/>
+		<img class='img-responsive center-block' data-featherlight='/img/loon.jpg' src='/img/loon.jpg' alt='Gondola at Loon'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -714,10 +1006,12 @@ have to cough up a large chunk up front to prove you mean business. The island h
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Loon_NH'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Loon_NH'></span></p>
 	</div>
-		<div class='text-center'><?php
+	<div class='col-md-6'>
+		<div class='text-center vote-border'><?php
 	echo "Thumbs up: {$data[0][0]['Loon_NH']}" ;
 	echo "  Thumbs down: {$data[0][1]['Loon_NH']}";
 	?>
+	</div>
 	</div>
 </div>
 <div class='row'>
@@ -768,7 +1062,7 @@ have to cough up a large chunk up front to prove you mean business. The island h
 <div class='row'>
 <div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/millinocket.jpg' alt='Millinockett, Maine'/>
+		<img class='img-responsive center-block' data-featherlight='/img/millinocket.jpg' src='/img/millinocket.jpg' alt='Millinockett, Maine'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -777,14 +1071,16 @@ have to cough up a large chunk up front to prove you mean business. The island h
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Millinockett_ME'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Millinockett_ME'></span></p>
 	</div>
-		<div class='text-center'><?php
+	<div class='col-md-6'>
+		<div class='text-center vote-border'><?php
 	echo "Thumbs up: {$data[0][0]['Millinockett_ME']}" ;
 	echo "  Thumbs down: {$data[0][1]['Millinockett_ME']}";
 	?></div>
+	</div>
 </div>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>
+		<p class='description'>
 		With a population of only around 4500 year round residents Millinocket is definitely a small town in the middle of the expansive forest of northern Maine. Come here if you are seeking adventure. This is close
 		to one of the last outposts of human civilization going north or west further into Maine.
 		Millinocket Lake is drained by the West Branch Penobscot River and Millinocket Stream, and is 9 miles (14 km) northwest of town. 
@@ -828,7 +1124,7 @@ have to cough up a large chunk up front to prove you mean business. The island h
 <div class='row'>
 <div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/barharbor.jpg' alt='Bar Harbor, Maine'/>
+		<img class='img-responsive center-block' data-featherlight='/img/barharbor.jpg' src='/img/barharbor.jpg' alt='Bar Harbor, Maine'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -838,14 +1134,16 @@ have to cough up a large chunk up front to prove you mean business. The island h
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Bar_Harbor_ME'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Bar_Harbor_ME'></span></p>
 	</div>
-		<div class='text-center'><?php
+	<div class='col-md-6'>
+		<div class='text-center vote-border'><?php
 	echo "Thumbs up: {$data[0][0]['Bar_Harbor_ME']}" ;
 	echo "  Thumbs down: {$data[0][1]['Bar_Harbor_ME']}";
 	?></div>
+	</div>
 </div>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>Bar Harbor is a town on Mount Desert Island in Hancock County, Maine, United States. It is an island accessed by bridge, it is also home to Acadia National Park and the highest
+		<p class='description'>Bar Harbor is a town on Mount Desert Island in Hancock County, Maine, United States. It is an island accessed by bridge, it is also home to Acadia National Park and the highest
 		peak within 25 miles of the coastline of the eastern United States. There is a bustling downtown section and with so many different activities for vacationers its no wonder it is such a huge tourist destination in the
 		summer and fall. I personally know multiple people who keep coming back to work here every year, the money is good and the place can be magical! The main thing here is finding housing,  since the island 
 		has a finite amount of housing, and the commute from off island can take up to an hour or more during high tourist times its best to secure housing on island early even if it costs a little bit more.
@@ -889,7 +1187,7 @@ have to cough up a large chunk up front to prove you mean business. The island h
 <div class='row'>
 <div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/sugarloaf.jpg' alt='Sugarloaf, Maine'/>
+		<img class='img-responsive center-block' data-featherlight='/img/sugarloaf.jpg' src='/img/sugarloaf.jpg' alt='Sugarloaf, Maine'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -898,14 +1196,16 @@ have to cough up a large chunk up front to prove you mean business. The island h
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Sugarloaf_ME'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Sugarloaf_ME'></span></p>
 	</div>
-		<div class='text-center'><?php
+	<div class='col-md-6'>
+		<div class='text-center vote-border'><?php
 	echo "Thumbs up: {$data[0][0]['Sugarloaf_ME']}" ;
 	echo "  Thumbs down: {$data[0][1]['Sugarloaf_ME']}";
 	?></div>
+	</div>
 </div>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>With it's peak standing at 4237' and a continous vertical drop of 2820' Sugarloaf is the largest ski resort east of the Mississippi in terms of skiable acreage 1230.
+		<p class='description'>With it's peak standing at 4237' and a continous vertical drop of 2820' Sugarloaf is the largest ski resort east of the Mississippi in terms of skiable acreage 1230.
 		A 2 hour drive from Portland, ME it is not TOO far from a major city, but is far enough away from Boston and New York (6 and 9 hours respectively) where only the hardcore skiers from that far south
 		make it up. You obviously get the unwashed masses coming in droves for Christmad Vacation, MLK Jr Day, and school vacation weeks, but it is nice to be on the mountain mid-week and be able to not see another
 		soul your whole run.  The side country available is amazing and guaranteed the best in the east. An entire basin is available that is only glades, and eventually dumps you back out at a lift, or you can choose
@@ -950,7 +1250,7 @@ have to cough up a large chunk up front to prove you mean business. The island h
 <div class='row'>
 <div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/sundayriver.jpg' alt='Sunday River, Maine'/>
+		<img class='img-responsive center-block' data-featherlight='/img/sundayriver.jpg' src='/img/sundayriver.jpg' alt='Sunday River, Maine'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -959,14 +1259,16 @@ have to cough up a large chunk up front to prove you mean business. The island h
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Sunday_River_ME'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Sunday_River_ME'></span></p>
 	</div>
-		<div class='text-center'><?php
+	<div class='col-md-6'>
+		<div class='text-center vote-border'><?php
 	echo "Thumbs up: {$data[0][0]['Sunday_River_ME']}" ;
 	echo "  Thumbs down: {$data[0][1]['Sunday_River_ME']}";
 	?></div>
+	</div>
 </div>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>Located in Newry, Maine just barely 3 hours from Boston, Sunday River is nearly a straight shot up I-95 into southern Maine. Known for being open for halloween when the weather cooperates,
+		<p class='description'>Located in Newry, Maine just barely 3 hours from Boston, Sunday River is nearly a straight shot up I-95 into southern Maine. Known for being open for halloween when the weather cooperates,
 		Sunday River beat out Arapahoe Basin in Colorado for first ski resort to open in the continental United States in 2010. With 870 acres of skiable terrain available it is second largest for east coast ski resorts. This place gets
 		busy every single weekend. Being so close to Portland, ME and Boston, MA there is no shortage of businesses or lodges to work at.
 		</p>
@@ -1008,7 +1310,7 @@ have to cough up a large chunk up front to prove you mean business. The island h
 <div class='row'>
 <div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='/img/ogunquit.jpg' alt='Ogunquit, Maine'/>
+		<img class='img-responsive center-block' data-featherlight='/img/ogunquit.jpg' src='/img/ogunquit.jpg' alt='Ogunquit, Maine'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -1019,14 +1321,16 @@ have to cough up a large chunk up front to prove you mean business. The island h
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='Ogunquit_ME'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='Ogunquit_ME'></span></p>
 	</div>
-		<div class='text-center'><?php
+	<div class='col-md-6'>
+		<div class='text-center vote-border'><?php
 	echo "Thumbs up: {$data[0][0]['Ogunquit_ME']}" ;
 	echo "  Thumbs down: {$data[0][1]['Ogunquit_ME']}";
 	?></div>
+	</div>
 </div>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>Ogunquit,  means "beautiful place by the sea" in the indigenous Abenaki language. I must say, having been there myself, it really is a beautiful place by the sea. Many Mainers affectionately refer
+		<p class='description'>Ogunquit,  means "beautiful place by the sea" in the indigenous Abenaki language. I must say, having been there myself, it really is a beautiful place by the sea. Many Mainers affectionately refer
 		to the town as 'northern Massachussetts' because of how close it is to Boston. People start coming here as early as memorial day, and continue coming until all the leaves have fallen off the trees. Ogunquits Marginal Way,
 		a one and a quarter mile long trail with views of the coast, is neatly paved and the treacherous cliffs are, in places, fenced. The path leads from the downtown shopping area to the fishing village in Perkins Cove, 
 		now an outdoor mall of jewelry, clothing and candle boutiques. Ogunquit is also heralded as an LGBT destination with many of its tourists and business owners being of the LGBT community.
@@ -1079,7 +1383,7 @@ include 'nomad_footer.php'?>
 <div class='row'>
 	<div class='col-md-3'></div>
 	<div class='col-md-6'>
-		<img class='img-responsive center-block' src='IMG SOURCE' alt='IMAGE ALT'/>
+		<img class='img-responsive center-block' data-featherlight='IMG SOURCE' src='IMG SOURCE' alt='IMAGE ALT'/>
 	</div>
 	<div class='col-md-3'></div>
 </div>
@@ -1088,15 +1392,17 @@ include 'nomad_footer.php'?>
 	<div class='col-md-6'>
 		<p class='text-center' style='font-size:2em;'>Vote  <span class='glyphicon glyphicon-thumbs-up' data-location='LOCATION'></span>  <span class='glyphicon glyphicon-thumbs-down' data-location='LOCATION'></span></p>
 	</div>
-		<div class='text-center'><?php /*
+		<div class='col-md-6'>
+		<div class='text-center vote-border'><?php /*
 	echo "Thumbs up: {$data[0][0]['LOCATION']}" ;
 	echo "  Thumbs down: {$data[0][1]['LOCATION']}";
 	*/?>
 	</div>
+	</div>
 </div>
 <div class='row'>
 	<div class='col-md-6'>
-		<p class='text-center'>DESCRIPTION
+		<p class='description'>DESCRIPTION
 		</p>
 		<ul>
 			<li><a href='FIRST LINK'>LINK NAME</a>DESCRIPTION OF WEBSITE</li>

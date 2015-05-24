@@ -1,10 +1,6 @@
 <?php 
 
-var_dump($_POST);
-echo 'unsanitized';
-foreach ($_POST as $a){
-	var_dump($a);
-}
+
 
 
 function cleanInput($input) {
@@ -54,19 +50,14 @@ $password = 'poke811';
 $conn2 = mysqli_connect($server, $username, $password, $dbname);
   $_POST = sanitize($_POST);
   $sanvars = $_POST;
-  echo 'sanitized';
-  var_dump($_POST);
   
 $command = "INSERT INTO survey (`years`,`original-location`,`all-locations`,`favorite-location`,`first-job`,`all-jobs`,`favorite-job`,`opinion`,`email`) 
 VALUES ('{$sanvars['years']}','{$sanvars['original-location']}','{$sanvars['all-locations']}','{$sanvars['favorite-location']}','{$sanvars['first-job']}','{$sanvars['all-jobs']}','{$sanvars['favorite-job']}','{$sanvars['opinion']}','{$sanvars['email']}')";
 $success = $conn2->query($command);
 if ($success) {
-	echo 'success';
 	
-  header('Location: http://aplaceformyhead.org/nomad/nomad_success.php');
-  exit;
 
-//http_redirect('aplaceformyhead.org/nomad/nomad_success.php');
+http_redirect('livethenomadlife.com');
 }
 else{
 	echo $conn2->error;

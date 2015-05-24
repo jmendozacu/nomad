@@ -1,8 +1,12 @@
-
+<!DOCTYPE html>
   <head>
 
-    <title>noMad</title>
-
+    <title><?php echo $data['title']; ?></title>
+    <meta name="description" content="<?php if ($data) echo $data['description']; ?>">
+    <meta name="keywords" content="<?php if ($data) echo $data['keywords'];?>">
+	<!-- Featherweight Lightbox -->
+	<link href="//cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+	
     <!-- Bootstrap -->
 
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
@@ -18,3 +22,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+  
+  <meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Hege Refsnes">

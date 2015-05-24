@@ -1,4 +1,12 @@
-<?php include 'nomad_header.php' ?>
+
+		
+
+<?php 
+		$title = 'noMad Life';
+		$description = 'Guide to living seasonally, review and vote on resort towns, learn how to see the world AND make great money doing it!';
+		$keywords = 'livethenomadlife, seasonal employment, nomad, nomadic lifestyle, modern nomad, tourism industry, tourism, survey, ski resort, beach town, ski, beach, snowboard, vacation, my life is your vacation';
+		$data = array('title'=>$title, 'description'=> $description, 'keywords'=>$keywords);
+include 'nomad_header.php' ?>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <body>
   <!-- Navigation  -->
@@ -10,11 +18,13 @@
 <br/><br/>
 <div class='row'>
 	<!--<div class='col-md-4'></div>-->
-	<div class='col-md-12'>
+	<div class='col-md-4'></div>
+	<div class='col-md-4'>
 	<div style='width:436px; margin:0 auto;'>
 		<img style='max-width:100%;' src='/img/nomadbanner.jpg'/>
 	</div>
 	</div>
+	<div class='col-md-4'></div>
 	<!--<div class='col-md-4'></div>-->
 	
 </div>

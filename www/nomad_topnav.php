@@ -20,7 +20,7 @@
           <ul class="dropdown-menu" role="menu">
             <li><a href="/overview">Overview</a></li>
             <li><a href="/experiences">Experiences</a></li>
-            <li><a href="#">About</a></li>
+            <!--<li><a href="/about">About</a></li>-->
           </ul>
         </li>
       </ul>
